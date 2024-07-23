@@ -1,0 +1,15 @@
+1) Connecting to a Linux Server:
+    ssh username@192.168.1.10
+2) File System Navigation:
+    cd /var/log
+    ls -al > ~/log_list.txt
+3) User Management:
+    sudo useradd -M testuser
+4) File Permissions:
+    mkdir ~/testdir
+    chmod 700 ~/testdir
+5) Basic Network Configuration:
+    ifconfig
+6) Package Management:
+    sudo apt update
+    sudo apt install curl

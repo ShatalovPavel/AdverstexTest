@@ -1,0 +1,8 @@
+SELECT
+    c.id as id,
+    c.title as title,
+    COUNT(sc.student_id) as student_count
+FROM classes as c
+LEFT JOIN students_classes as sc ON c.id = sc.class_id
+GROUP BY  c.id, c.title
+ORDER BY c.id
